@@ -32,3 +32,14 @@ bin\lapins exp 1000 72 50 1 2 3 4 5
 ```
 
 Les fichiers CSV sont écrits dans le dossier courant. Pour les figures : `python scripts\analyse.py`, à lancer dans le dossier qui contient les CSV.
+
+
+## Compilation sans PowerShell
+
+```bash
+mkdir -p bin
+gcc -O2 -Isrc -o bin/lapins src/lapin.c src/Random.c src/mt19937ar.c src/Population.c src/Survival.c src/simulation.c -lm
+gcc -O2 -Isrc -o bin/tests  tests/<fichier_de_tests>.c src/Random.c src/mt19937ar.c src/Population.c src/Survival.c src/simulation.c -lm
+```
+
+Les tests de validation se lancent ensuite avec `bin/tests` (sous Windows : `bin\tests`).
