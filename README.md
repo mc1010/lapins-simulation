@@ -1,6 +1,6 @@
 ﻿# Simulation stochastique d'une population de lapins
 
-Lab 4a, ISIMA (filière F2). Simulation individu-centrée en C : chaque lapin a son âge, son sexe, sa maturité et son calendrier de portées ; naissances et décès sont tirés au hasard, au pas d'un mois.
+Simulation individu-centrée en C : chaque lapin a son âge, son sexe, sa maturité et son calendrier de portées ; naissances et décès sont tirés au hasard, au pas d'un mois.
 
 ## Contenu
 
@@ -24,9 +24,6 @@ bin\lapins run   [mois] [graine] [couples] [plafond_millions]   # un run détail
 bin\lapins limit [couples] [graine] [plafond_millions]          # limite du modèle libre
 bin\lapins exp   [reps] [mois] [plafond_millions] [couples ...] # réplications
 ```
-
-Ajouter `K=100000` à la fin de la commande active la capacité maximale (20 ans en moins d'une seconde par run).
-
 Exemples :
 
 ```powershell
